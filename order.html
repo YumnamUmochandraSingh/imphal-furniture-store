@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+function sendWhatsApp(){
+
+    let phone = "918413978945";
+
+    let message =
+`Hello Imphal Furniture Store,
+
+I would like to place an order.
+
+Thank you.`;
+
+    let url =
+"https://wa.me/" +
+phone +
+"?text=" +
+encodeURIComponent(message);
+
+    window.open(url, "_blank");
+}
+</script>
+<body>
+
+<h1>Checkout</h1>
+
+<form>
+
+    <label>Full Name:</label><br>
+    <input type="text" required><br><br>
+
+    <label>Phone Number:</label><br>
+    <input type="tel" required><br><br>
+
+    <label>Delivery Address:</label><br>
+    <textarea rows="4" required></textarea><br><br>
+
+    <h3>Payment Method</h3>
+
+    <input type="radio" name="payment" checked>
+    Cash on Delivery<br><br>
+
+    <input type="radio" name="payment">
+    UPI Payment<br><br>
+
+    <div class="upi-section">
+
+        <h3>Scan & Pay</h3>
+
+        <img src="images/upi-qr.png"
+             alt="UPI QR"
+             width="200">
+
+        <p>
+            UPI ID:
+            imphalfurniture@upi
+        </p>
+
+    </div>
+
+    <a href="success.html">
+    <button type="button" onclick="sendWhatsApp()">
+    Place Order on WhatsApp
+</button>
+</a>
+
+</form>
+
+</body>
+</html>

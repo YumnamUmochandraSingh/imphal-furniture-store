@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Imphal Furniture Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <img src="images/logo.png" alt="Logo" class="logo">
+
+    <div>
+        <h1>Imphal Furniture Store</h1>
+        <p>Premium Furniture Collection</p>
+    </div>
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">
+    Cart (<span id="cartCount">0</span>)
+</a>
+</nav>
+
+
+<div class="products">
+
+    <!-- Product 1 -->
+    <div class="card">
+        <img src="images/chair.jpg">
+        <h2>Wooden Chair</h2>
+        <p>₹1999</p>
+        <button onclick="addToCart('Wooden Chair',1999,'images/chair.jpg')">
+        Add To Cart
+    </button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="card">
+        <img src="images/table.jpg">
+        <h2>Study Table</h2>
+        <p>₹4999</p>
+        <button onclick="addToCart('Study Table',4999,'images/table.jpg')">
+    Add To Cart
+</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="card">
+        <img src="images/sofa.jpg">
+        <h2>Sofa Set</h2>
+        <p>₹14999</p>
+        <button onclick="addToCart('Sofa Set',14999,'images/sofa.jpg')">
+    Add To Cart
+</button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="card">
+        <img src="images/bed.jpg">
+        <h2>Bed</h2>
+        <p>₹19999</p>
+        <button onclick="addToCart('Bed',19999,'images/bed.jpg')">
+    Add To Cart
+</button>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="card">
+        <img src="images/wardrobe.jpg">
+        <h2>Wardrobe</h2>
+        <p>₹12999</p>
+        <button onclick="addToCart('Wardrobe',12999)">
+    Add To Cart
+</button>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="card">
+        <img src="images/officechair.jpg">
+        <h2>Office Chair</h2>
+        <p>₹5999</p>
+        <button onclick="addToCart('Office Chair',5999,'images/wardrobe.jpg')">
+    Add To Cart
+</button>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="card">
+        <img src="images/dining.jpg">
+        <h2>Dining Table</h2>
+        <p>₹15999</p>
+       <button onclick="addToCart('Dining Table',15999,'images/dining.jpg')">
+    Add To Cart
+</button>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="card">
+        <img src="images/tvunit.jpg">
+        <h2>TV Unit</h2>
+        <p>₹8999</p>
+        <button onclick="addToCart('TV Unit',8999,'images/tvunit.jpg')">
+    Add To Cart
+</button>
+    </div>
+
+    <!-- Product 9 -->
+    <div class="card">
+        <img src="images/bookshelf.jpg">
+        <h2>Bookshelf</h2>
+        <p>₹6999</p>
+        <button onclick="addToCart('Bookshelf',6999,'images/bookshelf.jpg')">
+    Add To Cart
+</button>
+    </div>
+
+    <!-- Product 10 -->
+    <div class="card">
+        <img src="images/coffee.jpg">
+        <h2>Coffee Table</h2>
+        <p>₹3999</p>
+        <button onclick="addToCart('Coffee Table',3999,'images/coffee.jpg')">
+    Add To Cart
+</button>
+    </div>
+
+    <!-- Product 11 -->
+    <div class="card">
+        <img src="images/shoerack.jpg">
+        <h2>Shoe Rack</h2>
+        <p>₹2999</p>
+        <button onclick="addToCart('Shoe Rack',2999,'images/shoerack.jpg')">
+    Add To Cart
+</button>
+    </div>
+
+    <!-- Product 12 -->
+    <div class="card">
+        <img src="images/dressing.jpg">
+        <h2>Dressing Table</h2>
+        <p>₹9999</p>
+        <button onclick="addToCart('Dressing Table',9999,'images/dressing.jpg')">
+    Add To Cart
+</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
